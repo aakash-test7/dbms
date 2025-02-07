@@ -1,5 +1,6 @@
 import streamlit as st
 import streamlit.components.v1 as components
+import base64
 
 def introduction():
     with st.container():
@@ -28,12 +29,15 @@ def introduction():
         - **Step 4**: View passbooks for customers or branches.
         """)
         st.image("Images/er.001.jpeg",use_container_width=True)
-
         with open("Pages/markmap.html", "r") as f:
             html_content = f.read()
-        iframe_code = f'<iframe srcdoc="{html_content}" width="100%" height="600" frameborder="0"></iframe>'
+        encoded_html = base64.b64encode(html_content.encode('utf-8')).decode('utf-8')
+        st.subheader("MarkMap")
+        iframe_code = f'''
+        <iframe src="data:text/html;base64,{encoded_html}" width="100%" height="500" style="border: 2px solid black;" frameborder="0"></iframe>
+        '''
         components.html(iframe_code, height=600)
-        return
+    return
 
 if __name__=="__page__":
     introduction()
