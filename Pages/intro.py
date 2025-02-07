@@ -32,7 +32,7 @@ def introduction():
         with open("Pages/markmap.html", "r") as f:
             html_content = f.read()
         iframe_code = f'<iframe srcdoc="{html_content}" width="100%" height="600" frameborder="0"></iframe>'
-        components.html(iframe_code, height=600,use_container_width=True)
+        components.html(iframe_code, height=600)
         return
 
 if __name__=="__page__":
