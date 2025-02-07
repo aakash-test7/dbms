@@ -1,4 +1,5 @@
 import streamlit as st
+import streamlit.components.v1 as components
 
 def introduction():
     with st.container():
@@ -26,7 +27,12 @@ def introduction():
         - **Step 3**: Add, modify, display, or delete records as per your requirements.
         - **Step 4**: View passbooks for customers or branches.
         """)
-        st.image("/Users/aakash27/Desktop/Project1 Passion/dbms/Images/er.001.jpeg",use_container_width=True)
+        st.image("Images/er.001.jpeg",use_container_width=True)
+
+        with open("Pages/markmap.html", "r") as f:
+            html_content = f.read()
+        iframe_code = f'<iframe srcdoc="{html_content}" width="100%" height="600" frameborder="0"></iframe>'
+        components.html(iframe_code, height=600,use_container_width=True)
         return
 
 if __name__=="__page__":
