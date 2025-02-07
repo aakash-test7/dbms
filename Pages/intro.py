@@ -29,14 +29,22 @@ def introduction():
         - **Step 4**: View passbooks for customers or branches.
         """)
         st.image("Images/er.001.jpeg",use_container_width=True)
-        with open("Pages/markmap.html", "r") as f:
-            html_content = f.read()
+        with open("Pages/structure.html", "r") as f:
+            html_content=f.read()
         encoded_html = base64.b64encode(html_content.encode('utf-8')).decode('utf-8')
-        st.subheader("MarkMap")
+        st.subheader("Structure")
         iframe_code = f'''
         <iframe src="data:text/html;base64,{encoded_html}" width="100%" height="500" style="border: 2px solid black;" frameborder="0"></iframe>
         '''
         components.html(iframe_code, height=600)
+        with open("Pages/markmap.html", "r") as f:
+            html_content2 = f.read()
+        encoded_html2 = base64.b64encode(html_content2.encode('utf-8')).decode('utf-8')
+        st.subheader("MarkMap")
+        iframe_code2 = f'''
+        <iframe src="data:text/html;base64,{encoded_html2}" width="100%" height="500" style="border: 2px solid black;" frameborder="0"></iframe>
+        '''
+        components.html(iframe_code2, height=600)
     return
 
 if __name__=="__page__":
