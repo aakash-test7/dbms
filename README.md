@@ -17,6 +17,7 @@ This is a Streamlit-based web application for managing a bank database. It allow
 - Python 3.8 or higher
 - Streamlit
 - pymysql
+- pandas
 
 To install the required dependencies, run the following:
 
