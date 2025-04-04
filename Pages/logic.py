@@ -313,5 +313,5 @@ def logic():
                         st.error(f"Error fetching customer passbook: {e}")
     return
 
-if __name__=="__page__":
+if __name__=="__main__":
     logic()
