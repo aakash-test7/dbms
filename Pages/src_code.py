@@ -327,5 +327,5 @@ def srccode():
     ''',language="python")
     return
 
-if __name__=="__page__":
+if __name__=="__main__":
     srccode()
