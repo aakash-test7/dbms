@@ -2,7 +2,7 @@
 
 🔗 **Live Demo:** [View WeatherWill](https://aakash-dbms.streamlit.app/)  
 
-[![DBMS Demo Video](https://img.youtube.com/vi/tRqVCMsXjeU/maxresdefault.jpg)](https://youtu.be/tRqVCMsXjeU)
+[![DBMS Demo Video](https://img.youtube.com/vi/tRqVCMsXjeU/hqdefault.jpg)](https://youtu.be/tRqVCMsXjeU)
 
 ## Overview
 This Bank Database Management System (DBMS) allows users to manage customer records, create tables, insert records, modify data, and interact with a MySQL database via a user-friendly interface.
