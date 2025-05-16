@@ -3,8 +3,6 @@ import streamlit as st
 st.set_page_config("DataBaseManagementSystem App",layout="wide")
 st.logo("Images/moneyrun.gif")
 st.markdown("""<style>.stLogo {    width: 48px;    height: 48px;}</style>""", unsafe_allow_html=True)
-hide_st_style = """‹style>#MainMenu {visibility: hidden;} footer {visibility: hidden;} header {visibility: hidden;} </style>"""
-st.markdown(hide_st_style, unsafe_allow_html=True)
 
 pages = [
     st.Page("Pages/intro.py", title="Introduction", icon="🏠"),
